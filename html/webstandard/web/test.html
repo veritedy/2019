@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>test</title>
+
+   <style>
+      *{margin: 0; padding: 0;}
+
+      .body {background: #000;}
+
+      .box {background: #fff; overflow: hidden; width: 1550px; padding: 30px; margin: 0 auto;}
+
+      .left {float: left;   border-right: 1px solid #ccc; position: relative;   width: 50%;}
+      .left h3 {padding-left: 50px;   }
+      .left ul {padding: 10px 35px;}
+      .left li {padding: 15px;}
+      .left li a {float: left; width: 60%;   }
+      .left li span {float: right;   width: 30%;   }
+      .left a.more {position: absolute; top: 15px; right: 10px; background: url(img/01.jpg)}
+
+      .right {float: left; position: relative;    margin-left: 30px;}
+      .right h3 {padding-left: 50px;}
+      .right ul {padding: 10px 35px;}
+      .right li {padding: 15px; background: url(img/02.jpg) no-repeat;}
+      .right li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: relative; padding-left: 45px;}
+      .right li a img {width: 40px; position: absolute; top: -5px; left: 0; padding: 15px;}
+      .right li span {float: right;   width: 30%;   }
+      .right a.more {position: absolute; top: 15px; right: 10px; background: url(img/01.jpg)}
+
+      ul, li {list-style: none;}
+      a {color: #222; text-decoration: none;}
+
+   </style>
+
+</head>
+<body class="body">
+      <div class="box">
+         <div class="left">
+         <h3>TOAST Meetup!</h3>
+         <ul>
+            <li><a href="#">크롬 네이티브 레이지 로딩</a><span>2019.05.22</span></li>
+            <li><a href="#">타입 스크립트에서 Vue 컴포넌트를 개발하는 방법</a><span>2019.05.22</span></li>
+            <li><a href="#">AngularJS에서 Vue로 전환하면서 배운 것</a><span>2019.04.24</span></li>
+            <li><a href="#">실용적인 프론트엔드 테스트 전략(3)</a><span>2019.05.22</span></li>
+            <a href="#" class="more"><img src="img/01.jpg" alt=""></a>
+         </ul>
+         </div>
+         <!-- //왼쪽 박스 -->
+         <div class="right">
+            <h3>서비스 공지</h3>
+            <ul>
+               <li><a href="#">[보안동향공지]MySQL을 이용한 랜섬웨어 공격동향 및 대응책인거같음</a><span>2019.06.03</span></li>
+            <li><a href="#">[TOAST FORWARD]자바스크립트 OOP 꼭꼭 씹어 먹기</a><span>2019.05.28</span></li>
+            <li><a href="#">[JP Region]Compute & Network 점검 안내</a><span>2019.05.24</span></li>
+            <li><a href="#">Secure Key Manager 신규 출시 및 u2 Instance 정책 변경 안내인거 같음</a><span>2019.05.24</span></li>
+            <a href="#" class="more"><img src="img/01.jpg" alt=""></a>
+         </ul>
+         </div>
+         <!-- //오른쪽 박스 -->
+      </div>
+   </body>
+</html>

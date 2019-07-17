@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>test</title>
+   <style>
+      *{margin: 0; padding: 0;}
+      ul {list-style: none;}
+      a {color: #333; text-decoration: none;}
+      /*.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}*/
+      .content {background-color: #000;}
+      .box {background: #fff; width: 1400px; margin: 0 auto; padding:30px; overflow: hidden;}
+
+      .left {float: left; width: 50%; border-right: 1px solid#ccc; position: relative; }
+      .left h2 {padding-left: 50px;}
+      .left ul {padding: 10px 35px; list-style: none;}
+      .left li {padding: 15px;}
+      .left li a{float: left; width: 70%; text-overflow: ellipsis; white-space: nowrap; position: relative; overflow: hidden;}
+      .left li a:hover {text-decoration: underline;}
+      .left img {width: 10px; position: absolute; top: 5px; right: : 0;}
+      .left li span {float: right; width: 10%;}
+      .left a.more {position: absolute; top:10px; right: 50px; }
+
+      .right {float: left; margin-left: 10px; position: relative;}
+      .right h2{padding-left: 40px;}
+      .right ul {padding: 10px 5px; list-style: none;}
+      .right li {padding: 15px; }
+      .right li a {float: left; width: 70%; text-overflow: ellipsis; white-space: nowrap; padding-left: 20px; position: relative; overflow: hidden;}
+      .right li a:hover {text-decoration: underline;}
+      .right li span {float: right; width: 10%; }
+      .right a.more {position: absolute; top:10px; right: 10px;}
+   </style>
+</head>
+<body>
+   <div class="content">
+      <div class="box">
+         <div class="left">
+            <h2>TOAST Meetup!</h2>
+            <ul>
+               <li><a href="#">[Android] Unit Testing Framework - Robolectric</a><span>2019.06.04</span></li>
+               <li><a href="#">[Kotlin] 메모리 방지하기 l Kotin, Lambda의 강력함 l Lambca는</a><span>2019.06.04</span></li>
+               <li><a href="#">[Java] Integer.valueOf(127)==Integer.valueOf(127)는 참일까요?</a><span>2019.06.04</span></li>
+               <li><a href="#">[Kotlin l Android] 테스트 코드 작성이 힘든 이유와 테스트 가능 코드는</a><span>2019.06.04</span></li>
+            </ul>
+            <a href="#" class="more ir_pm"><img src="img/01.jpg" alt="더보기"></a>
+         </div>
+         <div class="right">
+            <h2>서비스 공지</h2>
+            <ul>
+               <li><a href="#"><img src="img/02.jpg">[보안동향공지] MySQL을 이용한 랜섬웨어 공격동향 및 대</a><span>2019.06.04</span></li>
+               <li><a href="#"><img src="img/02.jpg">[TOAST FORWARD] 자바스크립트 OOP 꼭꼭 씹어 먹기</a><span>2019.05.28</span></li>
+               <li><a href="#"><img src="img/03.jpg">[JP Region] Compute & Network 점검 안내</a><span>2019.05.24</span></li>
+               <li><a href="#"><img src="img/02.jpg">Secure Key Manager 신규 출시 및 u2 Instance 정책 변화</a><span>2019.05.24</span></li>
+            </ul>
+            <a href="#" class="more ir_pm"><img src="img/01.jpg" alt="더보기"></a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

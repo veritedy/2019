@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <meta name="author" content="">
+    <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+    <meta name="keywords" content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, html5, html4, css3, html, markup, design">
+    <title>html</title>
+
+    <!-- web_font -->
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+
+    <!-- css -->
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+    <link href="../../responsive/res/assets/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Prettify -->
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/ico/icon_57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/icon_114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/icon_72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/icon_144.png">
+
+    <!-- hmlt5 support -->
+    <!--[if lt IE 9]><script src="../assets/js/html5shiv.js"></script><![endif]-->
+
+    <!-- IE6,7 support -->
+    <!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+
+    <!--[if lte IE 6]>
+        <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+            사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+            <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+            <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+            <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+            <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+            <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+            <![endif]-->
+    <style>
+        .face {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        .face img {
+            width: 400px;
+            border-radius: 50%;
+        }
+
+        .face1 img {
+            width: 22%;
+            border-radius: 10%;
+            margin: 1%;
+        }
+
+        .member {
+            margin: 50px 0;
+        }
+
+        .member li {
+            width: 150px;
+            list-style: none;
+            display: inline-block;
+            margin: 6px;
+        }
+
+        .member li img {
+            border-radius: 50%;
+        }
+
+        table em {
+            border: 1px solid #000;
+            font-style: normal;
+            font-size: 80%;
+            padding: 3px;
+            border-radius: 3px;
+            background: #fff;
+            color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="top-nav" class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="#">webstoryboy</a></li>
+                        <li><a href="#">reference</a></li>
+                        <li><a href="#">tutorial</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">html</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //nav -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                    <div class="header_tit">
+                        <h1>Professional web publishers</h1>
+                        <h2><a href="http://webstoryboy.co.kr">webstoryboy.co.kr</a></h2>
+                    </div>
+                    <div class="header_icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i><span>html5</span></a></li>
+                            <li><a href="#"><i class="fa fa-css3" aria-hidden="true"></i><span>css3</span></a></li>
+                            <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i><span>codepen</span></a></li>
+                            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>github</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="container" style="margin-top:20px;">
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h1>HTML</h1>
+
+                <h2>HTML</h2>
+                <p class="well">HTML(HyperText Markup Language)은 웹 페이지를 만들기 위한 언어입니다.</p>
+                <br>
+
+                <h2>태그(Tag)</h2>
+                <p>태그는 정보를 정의하는 방식을 의미합니다.</p>
+                <ol>
+                    <li>태그는 열린 태그와 닫는 태그가 있습니다.</li>
+                    <li>닫는 태그에는 '/'가 있어야 합니다.</li>
+                    <li>닫는 태그가 필요 없는 태그도 있습니다.(&lt;br /&gt;, &lt;hr /&gt;, &lt;img /&gt;, &lt;meta /&gt;)</li>
+                    <li>HTML5에서는 '/'가 생략이 가능합니다.</li>
+                </ol>
+                <br>
+
+                <h2>블록 요소/인라인 요소</h2>
+                <p class="well">블록 요소는 박스, 인라인 요소는 텍스트를 의미합니다.</p>
+                <ul>
+                    <li>블록 엘리먼트(Block Element)
+                        <ul>
+                            <li>독립된 박스 영역으로, 한 줄에 하나의 블록 요소만 표현 할 수 있습니다.</li>
+                            <li>블록 요소에는 블록 요소와 인라인 요소를 포함 할 수 있습니다.</li>
+                            <li>&lt;div&gt;, &lt;p&gt;, &lt;h1~h6&gt;, &lt;ul&gt;, &lt;li&gt;</li>
+                        </ul>
+                    </li>
+                    <li>인라인 엘리먼트(Block Element)
+                        <ul>
+                            <li>독립된 텍스트 영역으로, 한 줄에 여러 개의 인라인 요소를 표현 할 수 있습니다.</li>
+                            <li>인라인 요소에는 블록 요소가 포함될 수 없지만, 인라인 요소는 포함 할 수 있습니다.</li>
+                            <li>&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <img src="http://mblogthumb2.phinf.naver.net/20140822_85/sbd38_1408691650314QIK64_JPEG/bloinlin.jpg?type=w2" alt="">
+                
+                <br>
+                <h2>파비콘</h2>
+                <p class="well">인터넷 웹 브라우저의 주소창에 표시되는 웹페이지를 대표하는 아이콘입니다.</p>
+                <ul>
+                    <li>웹 브라우저 아이콘입니다.</li>
+                    <li>.ico 파일로 만들어야 합니다.</li>
+                    <li>.ico 파일은 모든 브라우저를 지원하고 .png 파일은 ie6~10에서는 지원 안됨</li>
+                    <li>모바일 아이콘도 따로 설정 할 수 있습니다.</li>
+                    <li>모바일 아이콘은 해상도별로 설정합니다.</li>
+                </ul>
+                
+                <br>
+                <h2>DTD (Document Type Declaration) 선언</h2>
+                <p class="well">웹 페이지를 제작하기 위해서는 웹 문서 형식 유형을 설정하여야 합니다.</p>
+                <p>독타입을 설정하지 않거나 잘못 설정하면 브라우저에 따라 화면이 다르게 나오거나 렌더링이 달라지기 때문에 독타입을 설정해야 합니다.</p>
+                
+                <br>
+                <h2>언어 속성 설정</h2>
+                <p class="well">컨텐츠의 언어를 인식하고 얻은 정보를 추출하는데 사용합니다.</p>
+
+<pre><code class="language-css line-numbers">&lt;!-- hrml5 --&gt;
+&lt;html lang="ko"&gt;
+
+&lt;!-- hrml4 --&gt;
+&lt;html lang="ko" xml;:ang="ko" xmlns="www.w3.org/1999/xhtml"--&gt;
+</code></pre>
+
+                <br>
+                <h2> 메타 데이터 설정</h2>
+                <p class="well">웹 사이트에 대한 여러가지 정보를 제공합니다</p>
+                <table class="table table-bordered table-stripid">
+                    <thead>
+                        <tr>
+                             <th>메타 베이터</th>
+                            <th>설명</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>charset</td>
+                            <td>웹 페이지 언어 설정</td>
+                        </tr>
+                        <tr>
+                            <td>author</td>
+                            <td>웹 페이지 대한 사람</td>
+                        </tr>
+                            <td>description</td>
+                            <td>웹 페이지 대한 서령</td>
+                        </tr>
+                        <tr>
+                            <td>keyworlds</td>
+                            <td>웹 페이지 대한 키워드</td>
+                       </tr>     
+                        <tr>
+                            <td>generator</td>
+                            <td>웹 페이지를 만든 소프트웨어의 이름</td>
+                        </tr>
+                    </tbody>
+                </table>
+<pre><code class="language-css line-numbers">&lt;meta charset="UTF-8"&gt;
+&lt;meta name="author" content="doye"&gt;
+&lt;meta name="description" content="웹 표준을 준수한 사이트 만들기 예제입니다."&gt;
+&lt;meta name="keywords" content="웹표준, 웹접근성, 웹사이트만들기"&gt;
+&lt;meta name="generator" content="sublime text"&gt;    
+&lt;title&gt;웹사이트 만들기&lt;/title&gt;
+</code></pre>
+                <br>
+                <h2>특수 문자(엔티티코디)</h2>
+                <p class="well">HTML에 본문에 바로 쓸 수 있는 특수 문자입니다.</p>
+                <table class="table table-bordered table-stripid">
+                    <thead>
+                        <tr>
+                            <th>문자</th>
+                            <th>이스케이핑</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>&amp;lt;</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td>&amp;gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&amp;</td>
+                            <td>&amp;amp;</td>
+                        </tr>
+                        <tr>
+                            <td>공백</td>
+                            <td>&amp;nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&copy;</td>
+                            <td>&amp;copy;</td>
+                        </tr>
+                        <tr>
+                            <td>&middot;</td>
+                            <td>&amp;middot;</td>
+                        </tr>
+                        <tr>
+                            <td>&quot;</td>
+                            <td>&amp;quot;</td>
+                        </tr>
+                        <tr>
+                            <td>&ldquo;</td>
+                            <td>&amp;ldquo;</td>
+                        </tr>
+                        <tr>
+                            <td>&rdquo;</td>
+                            <td>&amp;rdquo;</td>
+                        </tr>
+                        <tr>
+                            <td>&lsquo;</td>
+                            <td>&amp;lsquo;</td>
+                        </tr>
+                        <tr>
+                            <td>&rsquo;</td>
+                            <td>&amp;rsquo;</td>
+                        </tr>
+                        <tr>
+                            <td>&bull;</td>
+                            <td>&amp;bull;</td>
+                        </tr>
+                    </tbody>
+                 </table>
+
+                <h1>HTML Reference</h1>
+
+            <div>
+                <h2>&lt;div&gt;</h2>
+                <p class="well">블록요소로 웹페이지의 (전체적인 틀)레이아웃을 만들 때 주로 사용합니다.</p>
+
+                <br>
+                <h2>&lt;a&gt;</h2>
+                <p class="well">연결할 주소를 지정합니다.</p>
+                <li>&lt;a&gt; href: 연결할 주소를 지정하는 속성입니다.</li>
+                <li>&lt;a&gt; title: 해당 링크에 마우스를 갖다대면 링크에 대한 설명이 나옵니다.</li>
+                <li>&lt;a&gt; target: 링크를 클릭할 때 창을 어떻게 열지 결정합니다.</li>
+                
+                <br>
+                <h2>&lt;b&gt;</h2>
+                <p class="well">텍스트를 중요성과 관련성을 전달하지 않고 구별할 때 글자를 기울여서 표시하는 태그입니다.</p>
+                
+                <br>
+                <h2>&lt;em&gt;</h2>
+                <p class="well">특정부분을 강조하고 싶을 때 사용하는 태그입니다.</p>
+                
+                <br>
+                <h2>&lt;i&gt;</h2>
+                <p class="well">텍스트를 평범한 글자와 구분하기 위해 기울여서 표시하는 태그입니다.</p>
+                
+                <br>
+                <h2>&lt;mark&gt;</h2>
+                <p class="well">형광펜으로 그어 놓은 듯한 효과를 내는 태그입니다.</p>
+
+                <br>
+                <h2>&lt;span&gt;</h2>
+                <p class="well">인라인요소로 웹페이지의 일부분에 스타일을 적용시키기 위해 사용합니다. div와 비슷한 기능으로 차이점은 div는 줄 바꿈이 되지만, span은 줄 바꿈이 되지 않습니다.</p>
+
+                <br>
+                <h2>&lt;strong&gt;</h2>
+                <p class="well">중요한 문구를 강조하는 HTML 태그입니다.</p>
+
+                <br>
+                <h2>&lt;pre&gt;</h2>
+                <p class="well">Preformatted Text의 약자로 정해진 서식을 브라우저가 무시하지 않고 공간, 간격, 라인, 띄어쓰기 등을 모두 있는 그대로 나타나도록 정의합니다.</p>
+
+                <br>
+                <h2>&lt;table&gt;</h2>
+                <p class="well">HTML 문서에서 표를 만드는 태그입니다.</p>  
+                <li>&lt;table&gt; : 테이블을 만드는 태그입니다.</li>
+                <li>&lt;th&gt; : 테이블의 헤더부분을 만드는 태그입니다.</li>
+                <li>&lt;tr&gt; : 테이블의 행을 만드는 태그입니다.</li>
+                <li>&lt;td&gt; : 테이블의 열을 만드는 태그입니다.</li>
+                
+                <br>
+                <h2>&lt;h1~h6&gt;</h2>
+                <p class="well">h1~h6 요소는 6단계의 문서 제목을 구현합니다. 숫자가 작을수록 글자의 크기가 커집니다.</p>
+
+                <br>
+                <h2>&lt;section&gt;</h2>
+                <p class="well">일반적으로 문서의 컨텐츠 영역을 의미합니다.</p>
+                <ul>
+                    <li>컨텐츠와 관련된 한 가지 주제 영역을 말합니다.</li>
+                    <li>section 태그는 문장이나 스타일링 요소가 아니기 때문에 편의성이나 영역을 위함이면 div 태그가 좋습니다.</li>
+                    <li>section 태그는 제목이 없는 경우는 섹션이라고 할 수 없기 때문에 제목을 제공해야 합니다.</li>
+                    <li>section 태그는 일반적인 주제가 아니라면 구체적인 요소(article, aside, nav)를 사용하는 것이 더 적절합니다.</li>
+                    <li>section 태그 안에는 또 다른 section 태그를 넣을 수 있습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;article&gt;</h2>
+                <p class="well">컨텐츠의 독립적인 항목을 나타내는 컨텐츠를 의미합니다.</p>
+                <ul>
+                    <li>article은 신문기사, 잡지, 블로그의 항목, 게시판 글 등의 독립적인 항목을 나타냅니다.</li>
+                    <li>section 하나의 주제를 나타낸다면 article은 주제를 묶은 독립적인 콘텐츠입니다.</li>
+                    <li>section 요소 안에는 article요소를 쓸 수 있으며, article 요소 안에도 section 요소를 쓸 수 있습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;aside&gt;</h2>
+                <p class="well">웹 문서의 메인 콘텐츠에 영향을 미치지 않는 콘텐츠 영역을 나타냅니다.</p>
+                <ul>
+                    <li>aside는 메인 컨텐츠에 영향을 미치지 않는 사이드 정보, 광고 등 부분적인 정보를 그룹화할 때 사용합니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;nav&gt;</h2>
+                <p class="well">페이지 내에서 이동할 수 있는 네비게이션 링크 그룹입니다.</p>
+                <ul>
+                    <li>nav는 문서의 핵심적인 페이지의 메뉴 및 서브 메뉴에서 사용하고 문서에서 주로 한 번만 사용합니다.</li>
+                    <li>문서 안에 링크가 포함된 컨텐츠는 nav를 사용하지 않습니다.</li>
+                    <li>nav는 핵십적인 네비게비션에 사용해야 하므로, 푸터 내에 링크 그룹의 사용은 적절하지 않습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;main&gt;</h2>
+                <p class="well">웹 문서에 주요 컨텐츠 영역을 나타낼 때 사용합니다.</p>
+                <ul>
+                    <li>main은 웹 페이지에서 한 번만 사용할 수 있으며, 접근성과 검색영역 노출을 향상시킵니다.</li>
+                    <li>article, aside, footer, header, nav를 하위 요소로 사용할 수 있습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;header&gt;</h2>
+                <p class="well">웹 문서에 헤더 영역을 나타냅니다.</p>
+                <ul>
+                    <li>header에는 웹 페이지에 대한 소개, 네비게이션 영역, 테이블 영역, 검색 영역, 로고 영역을 포함하는 영역입니다.</li>
+                    <li>header에는 제목태그가 포함될 수 있으며, 필수 조건을 아닙니다.</li>
+                    <li>header는 섹션 콘텐츠가 아닌 그룹화하기 위한 요소이므로 section 요소를 포함할 수 없습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;footer&gt;</h2>
+                <p class="well">웹 문서에 푸터 영역을 나타냅니다.</p>
+                <ul>
+                    <li>footer는 저작권 정보, 회사 정보, 관련 링크, 주소, 바닥글, 사이트 정보 등을 포함하는 컨텐츠 영역입니다.</li>
+                    <li>footer는 섹션 콘텐츠가 아닌 그룹을 나타내는 요소이며, section, article, aside 등을 포함할 수 있습니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;HTML5에서 새로 생긴 태그&gt;</h2>
+                <ul>
+                    <li>article : 문서내에 독립적인 컨텐츠를 정의합니다.</li>
+                    <li>aside : 문서내에 사이드 컨텐츠를 정의합니다.</li>
+                    <li>audio : 오디오 파일을 정의합니다.</li>
+                    <li>bdi : 텍스트의 출력 방향을 브라우저가 판단해 표현합니다.</li>
+                    <li>bdo : 텍스트의 방향을 설정합니다.</li>
+                    <li>canvas : 그림을 그리는 비트맵을 정의합니다.</li>
+                    <li>data : 주어진 내용을 기계가 읽을 수 있도록 설정합니다.</li>
+                    <li>datalist : 미리 정의된 옵션의 리스트를 보여줍니다.</li>
+                    <li>details : 추가정인 정보를 보여주거나 숨기게 할 수 있습니다.</li>
+                    <li>dialog : 추가정인 정보를 팝업(박스) 형식으로 보여줍니다.</li>
+                    <li>figcaption : figure 요소의 제목을 정의합니다.</li>
+                    <li>figure : 그림, 도표, 사진, 코드등의 주석으로 표시합니다.</li>
+                    <li>main : 문서의 주요 콘텐츠를 정의합니다.</li>
+                    <li>mark : 참고 표시를 정의합니다.</li>
+                    <li>meter : 범위를 측정하는 게이지 정보를 정의합니다.</li>
+                    <li>nav : 네비게이션 링크를 정의합니다.</li>
+                    <li>wbr : 줄바꿈 할 위치를 정의합니다.</li>
+                </ul>
+    
+                <br>
+                <h2>&lt;HTML5에서 없어진 태그&gt;</h2>
+                <ul>
+                    <li>applet : 자바 애플릿 삽입 / 대체 수단 : embed / object 요소 사용합니다.</li>
+                    <li>acronym : 생략된 글자나 약어를 표시하는데 사용합니다.</li>
+                    <li>basefont : 문서의 기본 폰트, 사이즈, 종류를 설정합니다.</li>
+                    <li>big : 텍스트 크기를 크게 해줍니다.</li>
+                    <li>blink : 텍스트를 깜박이게 설정합니다.</li>
+                    <li>center : 텍스트를 가운데 정렬합니다.</li>
+                    <li>canvas : 그림을 그리는 비트맵을 정의합니다.</li>
+                    <li>dir : 파일 및 폴더의 디렉토리를 정의합니다.</li>
+                    <li>frame : 프레임 / 대체 수단 : iframe과 CSS 이용하거나 서버 사이트로 컨텐츠 결합</li>
+                    <li>frameset : 프레임 세트 / 대체 수단 : iframe과 CSS를 이용하거나 서버 사이드 컨텐츠 결합</li>
+                    <li>noframes : 프레임에 대응하지 않는 브라우저를 위한 컨텐츠 / 대체 수단 : iframe과 CSS를 이용하거나 서버 사이드로 컨텐츠 결합</li>
+                    <li>isindex : 서버로 송신하는 텍스트 입력란 / 대체 수단 : form과 텍스트 필드의 조합</li>
+                    <li>big : 텍스트 사이즈를 크게 함 / 대체 수단 : CSS 사용</li>
+                    <li>blink : 문자를 점멸 / 대체 수단 : CSS 사용</li>
+                    <li>s : 취소선 / 대체 수단 : CSS 사용</li>
+                    <li>u : 텍스트에 밑줄을 그음 / 대체 수단 : CSS 사용</li>
+                    <li>bgsound : 배경음 삽입 / 대체 수단 : audio 요소를 대신 사용</li>
+                    <li>tt : 글꼴을 같은 폭으로 표시 / 대체 수단 : CSS 사용</li>
+                    <li>strike : 취소선 / 대체 수단 : CSS 사용</li>
+                </ul>
+
+                <br>
+                <h2>&lt;HTML5에서 의미가 변경된 태그&gt;</h2>
+                <ul>
+                    <li>a : href 없이 사용하면 "작업용 링크(null link)"로 사용 함. 문장보다는 흐름을 나타내는 콘텐츠에 사용 될 수 있다.</li>
+                    <li>address : 섹션 개념을 통해 새로운 영역을 표시하고, 실제 우편물 주소를 표시합니다.</li>
+                    <li>b : 인쇄상 강조 표현을 가진 텍스트 뿐만 아니라 제품 소개 내 제품명, 문서 키워드 같은 아주 특별한 중요도는 갖지 않으나 일반적인 강조의 목적에 사용합니다.</li>
+                    <li>em : 중요한 정보를 강조할 때 사용합니다.</li>
+                    <li>hr : 단락 단위의 주제 바꿈을 할 때 사용합니다.</li>
+                    <li>i : 인쇄상 기울임 표현을 가진 텍스트 뿐만 아니라 소리나 분위기를 대체하는 문구 등에 사용합니다.</li>
+                    <li>menu : 실제적 문서 메뉴 정보를 제공하는 데 사용합니다.</li>
+                    <li>small : 세부 주석 및 법적(copyright) 인쇄 문서에서 작은 인쇄 정보를 담을 때 사용합니다.</li>
+                    <li>strong : 강조보다 더 중요한 정보를 제공할 때 사용합니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;Input&gt;</h2>
+                <p class="well">사용자에게 입력을 받을 수 있는 필드를 생성하는 태그입니다.</p>
+                <li>&lt;hidden&gt; : 사용자에게는 보이지 않지만 서버로 넘겨지는 값을 가집니다.</li>
+                <li>&lt;text&gt; : 한 줄짜리 텍스트를 입력할 수 있는 텍스트 상자를 넣습니다.</li>
+                <li>&lt;search&gt; : 검색 상자를 넣습니다.</li>
+                <li>&lt;tel&gt; : 전화번호 입력 필드를 넣습니다.</li>
+                <li>&lt;url&gt; : url 주소를 입력할 수 잇는 필드를 넣습니다.</li>
+                <li>&lt;email&gt; : 메일 주소를 입력할 수 있는 필드를 넣습니다.</li>
+                <li>&lt;password&gt; : 비밀번호를 입력할 수 있는 필드를 넣습니다.</li>
+                <li>&lt;datetime&gt; : 국제 표준시(UTC)로 설정된 날짜와 시간(연, 월, 일, 시, 분, 초, 분할 초)를 넣습니다.</li>
+                <li>&lt;datetime-local&gt; : 사용자가 있는 지역을 기준으로 날짜와 시간(연, 월, 일, 시, 분, 초, 분할 초)를 넣습니다.</li>
+                <li>&lt;date&gt; : 사용자 지역을 기준으로 날짜와 시간(연, 월, 일)을 넣습니다.</li>
+                <li>&lt;month&gt; : 사용자 지역을 기준으로 날짜와 시간(연, 월)을 넣습니다.</li>
+                <li>&lt;week&gt; : 사용자 지역을 기준으로 날짜와 시간(연, 주)를 넣습니다.</li>
+                <li>&lt;time&gt; : 사용자 지역을 기준으로 시간(시, 분, 초, 분할 초)를 넣습니다.</li>
+                <li>&lt;number&gt; : 숫자를 조절할 수 있는 화살표를 넣습니다.</li>
+                <li>&lt;range&gt; : 숫자를 조절할 수 있는 슬라이드 막대를 넣습니다.</li>
+                <li>&lt;color&gt; : 색상 표를 넣습니다.</li>
+                <li>&lt;checkbox&gt; : 주어진 항목에서 2개 이상 선택 가능한 체크박스를 넣습니다.</li>
+                <li>&lt;radio&gt; : 주어진 항목에서 1개만 선택할 수 있는 라디오 버튼을 넣습니다.</li>
+                <li>&lt;file&gt; : 파일을 첨부할 수 있는 버튼을 넣습니다.</li>
+                <li>&lt;submit&gt; : 서버 전송 버튼을 넣습니다.</li>
+                <li>&lt;image&gt; : 버튼 대신 사용할 이미지를 넣습니다.</li>
+                <li>&lt;reset&gt; : 리셋 버튼을 넣습니다.</li>
+                <li>&lt;button&gt; : 버튼을 넣습니다.</li>
+
+                <br>
+                <h2>&lt;시멘틱 태그&gt;</h2>
+                <ul>
+                    <li>header  : 화면 상단에 위치하며 보통 로고, 로그인, 회원가입 등을 포함합니다.</li>
+                    <li>nav : 보통 <header> 영역의 아래쪽에 위치하며 메뉴를 표현할 수 있습니다.</li>
+                    <li>aside : 사이드에 위치하는 공간을 의미합니다. 보통 광고, 검색 기능, 카테고리 등을 표현합니다.</li>
+                    <li>section : 하나의 주제를 그룹화할 때 사용합니다. (ex 뉴스 기사의 제목) 여러 중심 내용을 감싸는 공간을 의미합니다.</li>
+                    <li>article : 하나의 주제에 대해서 그 내용에 대해 설명할 떄 사용합니다. (ex 뉴스 기사, 블로그 글) 글자가 많이 들어가는 부분을 의미합니다.</li>
+                    <li>footer : 화면 하단에 위치하며 보통 이메일, 저작권 표시 등을 표현합니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;X-UA-Compatible&gt;</h2>
+                <ul>
+                    <li>IE=5 : 관용모드(quirks mode)로 지정된 DOCTYPE에 상관없이 IE5 렌더링 방식이 사용됩니다.</li>
+                    <li>IE=7 : IE7 표준모드로 지정된 DOCTYPE에 상관없이 IE7 표준 모드 렌더링 방식이 사용됩니다.</li>
+                    <li>IE=EmulateIE7 : IE7 에뮬레이션 모드로 지정된 DOCTYPE에 따라 IE7 표준모드나 관용모드로 렌더링됩니다.</li>
+                    <li>IE=8 : IE8 표준모드로 지정된 DOCTYPE에 상관없이 IE8 표준모드로 렌더링됩니다.</li>
+                    <li>IE=EmulateIE8 : IE8 에뮬레이션 모드로 지정된 DOCTYPE에 따라 IE8 표준모드나 관용모드로 렌더링됩니다.</li>
+                    <li>IE=edge : 최신모드로 지정된 DOCTYPE에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링됩니다.</li>
+                </ul>
+
+                <br>
+                <h2>&lt;조건부 주석&gt;</h2>
+                <ul>
+                    <li>! : 아니다(not) - 예) [if !ie] ie가 아니라면</li>
+                    <li>lt : 작다(less than) - 예) [if lt ie 9] ie9 보다 작다면</li>
+                    <li>lte : 작거나 같다(less than equal) - 예) [if lte ie 8] ie8 보다 작거나 같다면</li>
+                    <li>gt : 크다(greater than) - 예) [if gt ie 6] ie6 보다 크다면</li>
+                    <li>gte : 크거나 같다(greater than equal) - 예) [if gte ie 7] ie7 보다 크거나 같다</li>
+                    <li>() : 우선처리</li>
+                    <li>& : 그리고(and) - 예) [if (gte ie 7)&(lt ie 9)] ie7 이상이고 ie9 미만이라면</li>
+                    <li>| : 또는(or) - 예) [if (ie 7)|(ie 8)] ie7 이거나 ie8 이라면</li>
+                </ul>
+
+                <br>
+                <h2>&lt;Modernizr&gt;</h2>
+                <p>사용자 브라우저의 HTML5, CSS3 기능들을 감지하고 지원여부를 판별하는 Javascipt 라이브러리 입니다.</p>
+                <div>
+                    <br>
+                    <h3>브라우저 지원</h3>
+                    <ul>
+                        <li>IE6+, Firefox 3.5+, Opera 9.6+, Safari 2+, Chrome</li>
+                        <li>mobile, iOS's mobile Safari, Android's WebKit browser, Opera Mobile, Firefox Mobile and whilst we’re still doing more testing we believe we support Blackberry 6+</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <h3>Modernizr(모더나이저) 연동</h3>
+                    <ul>
+                        <li>script src="js/modernizr-custom.js</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <h3>Modernizr(모더나이저) 감지</h3>
+                    <p>모더나이저의 속성은 모두 소문자로 이루어져 있으며 기본적으로 아래와 같은 포맷을 사용합니다.</p>
+                    <br>
+                    <ul>
+                        <li>Canvas : Modernizr.canvas </li>
+                        <li>Canvas Text : Modernizr.canvastest</li>
+                        <li>HTML5 Video : Modernizr.video</li>
+                        <li>HTML5 Audio : Modernizr.audio</li>
+                        <li>SVG : Modernizr.svg</li>
+                        <li>Box Shadow : Modernizr.boxshadow</li>
+                        <li>Box Sizing : Modernizr.boxsizing</li>
+                        <li>CSS Calc : Modernizr.csscalc</li>
+                    </ul>
+                </div>
+            </div>
+            <!--//span12-->
+        </div>
+        <!--//row-fluid-->
+    </div>
+    <!-- //contents -->
+
+    <!-- //footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h5>Webstoryboy</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- script -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/prism.js"></script>
+</body>
+
+</html>

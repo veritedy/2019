@@ -1,0 +1,551 @@
+r<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="veritedy">
+        <meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+        <meta name="keywords" content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, css3, html, markup, design">
+        <title>webstoryboy</title>
+        <!-- web_font -->
+        <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css' rel='stylesheet' type='text/css' />
+        <!-- css -->
+        <link href="assets/css/bootstrapTheme.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/isotope.css" rel="stylesheet">
+        <link href="../../responsive/res/assets/css/font-awesome.css" rel="stylesheet">
+
+        
+        <!-- Prettify -->
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/ico/icon_57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/icon_114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/icon_72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/icon_144.png">
+        
+        <!-- hmlt5 support -->
+        <!--[if lt IE 9]><script src="assets/js/html5shiv.js"></script><![endif]-->
+        <!-- IE6,7 support -->
+        <!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+        <!--[if lte IE 6]>
+            <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+                사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+                <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+                <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+                <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+                <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+                <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+            <![endif]-->
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58059b3c799af94c"></script>
+
+        </head>
+        <body>
+            <!-- nav -->
+            <div id="top-nav" class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li><a href="http://webstoryboy.dothome.co.kr" target="_blank">veritedy</a></li>
+                                <li><a href="https://veritedy.tistory.com" target="_blank">tistory</a></li>
+                                <li><a href="https://codepen.io/veritedy" target="_blank">codepen</a></li>
+                                <li><a href="https://dribbble.com" target="_blank">dribbble</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //nav -->
+            <!-- header -->
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12" style="text-align:center;">
+                            <div class="header_tit">
+                                <h1>Professional web publishers</h1>
+                                <h2><a href="http://webstoryboy.co.kr">webstoryboy.co.kr</a></h2>
+                            </div>
+                            <div class="header_icon MAIN">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i><span>html5</span></a></li>
+                                    <li><a href="#"><i class="fa fa-css3" aria-hidden="true"></i><span>css3</span></a></li>
+                                    <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i><span>codepen</span></a></li>
+                                    <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>github</span></a></li>
+                                </ul>
+                            </div>
+                            <!-- //header_icon -->
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //header -->
+            <div id="contents_tit">
+                <div class="titt">
+                    <p><a href="#" class="tit_btn">&quot;나나나나나&quot;</a></p>
+                </div>
+            </div>
+            <!-- contents -->
+            <div id="customizing">
+                <div class="container">
+                    <div class="row">
+                        <div id="options" class="gridly">
+                            <ul class="filter option-set" data-filter-group="color">
+                                <li><a href="#filter-color-any" data-filter-value="" class="selected">ALL</a></li>
+                                <li class="webstandard"><a href="#filter-color-webstandard" data-filter-value=".class">CLASS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" id="middle" style="margin-left:16px;">
+                        <div id="container" class="clearfix">
+                            <div class="color-shape class">
+                                <a href="class/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">CLASS</span>
+                                            <span class="overlay-text-thumb">CLASS</span>
+                                            <span class="overlay-text-thumb1">수업과 관련된 스케쥴입니다.</span>
+                                            <span class="overlay-text-thumb2">CLASS</span>
+                                        </div>
+                                        <img src="assets/img/tit1.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>CLASS</h5>
+                                            <p>수업과 관련된 스케쥴입니다.</p>
+                                            <span>CLASS</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="color-shape class">
+                                <a href="html/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">HTML</span>
+                                            <span class="overlay-text-thumb">HTML</span>
+                                            <span class="overlay-text-thumb1">수업과 관련된 스케쥴입니다.</span>
+                                            <span class="overlay-text-thumb2">HTML</span>
+                                        </div>
+                                        <img src="assets/img/tit2.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>HTML</h5>
+                                            <p>HTML 수업과 관련된 레퍼런스입니다.</p>
+                                            <span>HTML</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="color-shape class">
+                                <a href="css/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">CSS</span>
+                                            <span class="overlay-text-thumb">CSS</span>
+                                            <span class="overlay-text-thumb1">CSS 수업과 관련된 레퍼런스입니다.</span>
+                                            <span class="overlay-text-thumb2">CSS</span>
+                                        </div>
+                                        <img src="assets/img/tit3.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>CSS</h5>
+                                            <p>CSS 수업과 관련된 레퍼런스입니다.</p>
+                                            <span>CSS</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="color-shape class">
+                                <a href="layout/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">Layout</span>
+                                            <span class="overlay-text-thumb">Layout</span>
+                                            <span class="overlay-text-thumb1">Layout 수업과 관련된 레퍼런스입니다.</span>
+                                            <span class="overlay-text-thumb2">Layout</span>
+                                        </div>
+                                        <img src="assets/img/tit4.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>Layout</h5>
+                                            <p>Layout 수업과 관련된 레퍼런스입니다.</p>
+                                            <span>Layout</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="color-shape class">
+                                <a href="infor/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">INFOR</span>
+                                            <span class="overlay-text-thumb">INFOR</span>
+                                            <span class="overlay-text-thumb1">INFOR 수업과 관련된 레퍼런스입니다.</span>
+                                            <span class="overlay-text-thumb2">INFOR</span>
+                                        </div>
+                                        <img src="assets/img/tit5.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>INFOR</h5>
+                                            <p>INFOR 수업과 관련된 레퍼런스입니다.</p>
+                                            <span>INFOR</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="color-shape class">
+                                <a href="cheet/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">단축키</span>
+                                            <span class="overlay-text-thumb">단축키</span>
+                                            <span class="overlay-text-thumb1">단축키와 관련된 레퍼런스입니다.</span>
+                                            <span class="overlay-text-thumb2">단축키</span>
+                                        </div>
+                                        <img src="assets/img/tit6.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>단축키</h5>
+                                            <p>단축키와 관련된 레퍼런스입니다.</p>
+                                            <span>단축키</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="color-shape class">
+                                <a href="webstandard/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">웹 표준 사이트</span>
+                                            <span class="overlay-text-thumb">웹 표준 사이트</span>
+                                            <span class="overlay-text-thumb1">웹 표준 사이트 만들기 예제입니다.</span>
+                                            <span class="overlay-text-thumb2">웹 표준 사이트</span>
+                                        </div>
+                                        <img src="assets/img/tit7.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>웹 표준 사이트</h5>
+                                            <p>웹 표준 사이트 만들기 예제입니다.</p>
+                                            <span>웹 표준 사이트</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="color-shape class">
+                                <a href="responsive/index.html" target="_blank">
+                                    <div class="image-wrap">
+                                        <div class="hover-wrap">
+                                            <span class="overlay-img">반응형 사이트</span>
+                                            <span class="overlay-text-thumb">반응형 사이트</span>
+                                            <span class="overlay-text-thumb1">반응형 사이트 만들기 예제입니다.</span>
+                                            <span class="overlay-text-thumb2">반응형 사이트</span>
+                                        </div>
+                                        <img src="assets/img/tit8.jpg" alt="webstandard">
+                                        <div class="img-text">
+                                            <h5>반응형 사이트</h5>
+                                            <p>반응형 사이트 만들기 예제입니다.</p>
+                                            <span>반응형 사이트</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="color-shape class">
+                                    <a href="css_box-shadow/" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">BOX-SHADOW</span>
+                                                <span class="overlay-text-thumb">BOX-SHADOW</span>
+                                                <span class="overlay-text-thumb1">BOX-SHADOW 만들기 예제입니다.</span>
+                                                <span class="overlay-text-thumb2">BOX-SHADOW</span>
+                                            </div>
+                                            <img src="assets/img/tit9.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>BOX-SHADOW</h5>
+                                                <p>BOX-SHADOW 만들기 예제입니다.</p>
+                                                <span>BOX-SHADOW</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="css_border-radius/" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">BORDER-RADIUS</span>
+                                                <span class="overlay-text-thumb">BORDER-RADIUS</span>
+                                                <span class="overlay-text-thumb1">BORDER-RADIUS 만들기 예제입니다.</span>
+                                                <span class="overlay-text-thumb2">BORDER-RADIUS</span>
+                                            </div>
+                                            <img src="assets/img/tit10.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>BORDER-RADIUS</h5>
+                                                <p>BORDER-RADIUS 만들기 예제입니다.</p>
+                                                <span>BORDER-RADIUS</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="photoshop/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">PHOTOSHOP</span>
+                                                <span class="overlay-text-thumb">포토샵</span>
+                                                <span class="overlay-text-thumb1">포토샵 포토폴리오입니다.</span>
+                                                <span class="overlay-text-thumb2">PHOTOSHOP</span>
+                                            </div>
+                                            <img src="assets/img/tit5.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>PHOTOSHOP</h5>
+                                                <p>포토샵 포토폴리오</p>
+                                                <span>PHOTOSHOP</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="illustrator/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">ILLUSTRATOR</span>
+                                                <span class="overlay-text-thumb">일러스트</span>
+                                                <span class="overlay-text-thumb1">일러스트 포토폴리오입니다.</span>
+                                                <span class="overlay-text-thumb2">ILLUSTRATOR</span>
+                                            </div>
+                                            <img src="assets/img/tit4.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>ILLUSTRATOR</h5>
+                                                <p>일러스트 포토폴리오</p>
+                                                <span>ILLUSTRATOR</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="css_blend/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">BLEND EFFECT</span>
+                                                <span class="overlay-text-thumb">포토폴리오</span>
+                                                <span class="overlay-text-thumb1">CSS 효과</span>
+                                                <span class="overlay-text-thumb2">CSS3</span>
+                                            </div>
+                                            <img src="assets/img/tit3.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>BLEND EFFECT</h5>
+                                                <p>CSS 효과</p>
+                                                <span>CSS3</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="color-shape class">
+                                    <a href="css_back/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">BACKGROUND EFFECT</span>
+                                                <span class="overlay-text-thumb">포토폴리오</span>
+                                                <span class="overlay-text-thumb1">CSS 효과</span>
+                                                <span class="overlay-text-thumb2">CSS3</span>
+                                            </div>
+                                            <img src="assets/img/tit2.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>BACKGROUND EFFECT</h5>
+                                                <p>CSS 효과</p>
+                                                <span>CSS3</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="color-shape class">
+                                    <a href="css_transform/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">TRANSFORM</span>
+                                                <span class="overlay-text-thumb">CSS 효과</span>
+                                                <span class="overlay-text-thumb1">CSS 효과 레퍼런스입니다.</span>
+                                                <span class="overlay-text-thumb2">CSS</span>
+                                            </div>
+                                            <img src="assets/img/tit1.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>TRANSFORM</h5>
+                                                <p>CSS 효과</p>
+                                                <span>CSS</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="css_ani/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">CSS-ANIMATION</span>
+                                                <span class="overlay-text-thumb">애니메이션</span>
+                                                <span class="overlay-text-thumb1">CSS 애니메이션입니다.</span>
+                                                <span class="overlay-text-thumb2">CSS</span>
+                                            </div>
+                                            <img src="assets/img/tit2.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>CSS</h5>
+                                                <p>CSS-ANIMATION</p>
+                                                <span>CSsS</span>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="color-shape class">
+                                    <a href="css_sample/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">CSS-ANIMATION-SAMPLE</span>
+                                                <span class="overlay-text-thumb">애니메이션 샘플</span>
+                                                <span class="overlay-text-thumb1">CSS 애니메이션 샘플입니다.</span>
+                                                <span class="overlay-text-thumb2">CSS</span>
+                                            </div>
+                                            <img src="assets/img/tit3.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>CSS</h5>
+                                                <p>CSS-ANIMATION-SAMPLE</p>
+                                                <span>CSsS</span>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="grid/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">GRID</span>
+                                                <span class="overlay-text-thumb">그리드</span>
+                                                <span class="overlay-text-thumb1">그리드 시스템입니다.</span>
+                                                <span class="overlay-text-thumb2">GRID</span>
+                                            </div>
+                                            <img src="assets/img/tit4.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>GRID</h5>
+                                                <p>그리드 시스템</p>
+                                                <span>GRID</span>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="color-shape class">
+                                    <a href="css_ani_hover/index.html" target="_blank">
+                                        <div class="image-wrap">
+                                            <div class="hover-wrap">
+                                                <span class="overlay-img">HOVER</span>
+                                                <span class="overlay-text-thumb">오버</span>
+                                                <span class="overlay-text-thumb1">애니메이션 오버입니다.</span>
+                                                <span class="overlay-text-thumb2">HOVER</span>
+                                            </div>
+                                            <img src="assets/img/tit5.jpg" alt="webstandard">
+                                            <div class="img-text">
+                                                <h5>HOVER</h5>
+                                                <p>애니메이션 오버</p>
+                                                <span>HOVER</span>
+                                            </div> 
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                
+
+
+                            </div>
+                        </div>
+                        <!-- //row -->
+                    </div>
+                    <!-- //container-->
+                </div>
+                <!-- //contents -->
+                <!-- //footer -->
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12">
+                                <h5>Webstoryboy</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //footer -->
+                <!-- script -->
+                <script src="assets/js/jquery-1.9.1.min.js"></script>
+                <script src="assets/js/bootstrap-collapse.js"></script>
+                <script src="assets/js/bootstrap-transition.js"></script>
+                <!--<script src="js/jquery-1.7.1.min.js"></script>-->
+                <script src="assets/js/jquery.isotope.min.js"></script>
+                <script id="dsq-count-scr" src="//richclub3-1.disqus.com/count.js" async></script>
+                <script>
+                $(function() {
+                var $container = $('#container'),
+                filters = {};
+                $container.isotope({
+                itemSelector: '.color-shape',
+                masonry: {
+                columnWidth: 57
+                }
+                });
+                // filter buttons
+                $('.filter a').click(function() {
+                var $this = $(this);
+                // don't proceed if already selected
+                if ($this.hasClass('selected')) {
+                return;
+                }
+                var $optionSet = $this.parents('.option-set');
+                // change selected class
+                $optionSet.find('.selected').removeClass('selected');
+                $this.addClass('selected');
+                // store filter value in object
+                // i.e. filters.color = 'red'
+                var group = $optionSet.attr('data-filter-group');
+                filters[group] = $this.attr('data-filter-value');
+                // convert object into array
+                var isoFilters = [];
+                for (var prop in filters) {
+                isoFilters.push(filters[prop])
+                }
+                var selector = isoFilters.join('');
+                $container.isotope({
+                filter: selector
+                });
+                return false;
+                });
+                $('.tit_btn').on('click', function(e) {
+                e.preventDefault();
+                $('.nav_container').toggleClass('on');
+                });
+                $(".click").click(function() {
+                $(".view").fadeToggle();
+                });
+                });
+                </script>
+            </body>
+        </html>

@@ -1,0 +1,996 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="reflesh" content="5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="webstoryboy">
+	<meta name="description" content="웹 퍼블리셔를 위한 정보 공유 사이트입니다.">
+	<meta name="keywords" content="웹스토리보이, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, webstoryboy, publisher, html5, html4, css3, html, markup, design">
+	<title>Background</title>
+    
+    <!-- web_font -->
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+    
+    <!-- css -->
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../../responsive/res/assets/css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Prettify -->
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+	<link rel="apple-touch-icon" href="../assets/ico/icon_57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/icon_114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/icon_72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/icon_144.png">
+	
+	<!-- hmlt5 support -->
+	<!--[if lt IE 9]><script src="../assets/js/html5shiv.js"></script><![endif]-->
+	
+	<!-- IE6,7 support -->
+	<!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+	
+	<!--[if lte IE 6]>
+	<p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+	사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+	<a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+	<a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a> 
+	<a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+	<a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+	<a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+	<![endif]-->
+
+	<style>
+	.face {display:block; margin:20px auto; width:400px; }
+	.face img {width:400px; border-radius:50%; }
+	.face1 img {width:22%; border-radius:10%; margin:1%;}
+	.member {margin:50px 0;}
+	.member li {width:150px; list-style:none; display:inline-block; margin:6px; }
+	.member li img { border-radius:50%;}
+	</style>
+</head>
+
+
+
+<body>
+	<!-- nav -->
+    <div id="top-nav" class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                	<ul class="nav pull-right">
+                		<li><a href="#">webstoryboy</a></li>
+                		<li><a href="#">reference</a></li>
+                		<li><a href="#">tutorial</a></li>
+                		<li><a href="#">css</a></li>
+                		<li><a href="#">html</a></li>
+                	</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //nav -->
+    
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                    <div class="header_tit">
+	                	<h1>Professional web publishers</h1>
+						<h2><a href="http://webstoryboy.co.kr">webstoryboy.co.kr</a></h2>
+		            </div>
+		            <div class="header_icon">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i><span>html5</span></a></li>
+                            <li><a href="#"><i class="fa fa-css3" aria-hidden="true"></i><span>css3</span></a></li>
+                            <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i><span>codepen</span></a></li>
+                            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i><span>github</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    
+    <!-- contents -->
+	<div class="container" style="margin-top:20px;">
+		<div class="row-fluid">
+			<div class="span12">
+				<h1>Background</h1>
+                
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Sample</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>background</td>
+                            <td>background: #000 url(background.gif) no-repeat top center</td>
+                            <td>배경 속성 단축형</td>
+                        </tr>
+                        <tr>
+                            <td>background-image</td>
+                            <td>background-image: url(이미지 경로)</td>
+                            <td>배경 이미지 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-repeat</td>
+                            <td>background-repeat: no-repeat</td>
+                            <td>배경 이미지 반복 여부 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-attachment</td>
+                            <td>background-attachment: fixed</td>
+                            <td>배경 고정 여부 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-color</td>
+                            <td>background-color: #fff</td>
+                            <td>배경색 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-position</td>
+                            <td>background-position: top</td>
+                            <td>배경 이미지 위치 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-origin</td>
+                            <td>background-origin: content-box</td>
+                            <td>배경 위치 속성 여부 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-size</td>
+                            <td>background-size: cover</td>
+                            <td>배경이미지 사이즈 설정</td>
+                        </tr>
+                        <tr>
+                            <td>background-clip</td>
+                            <td>background-clip: content-box</td>
+                            <td>배경 적용 범위 설정</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                <h2>Background Gradients</h2>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Value</th>
+                            <th>Sample</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>linear-gradient</td>
+                            <td>background-image : linear-gradient(direction, color1, color2....)</td>
+                            <td>선형 그라데이션 백그라운를 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>radial-gradient</td>
+                            <td>background-image : radial-gradient(color1, color2....)</td>
+                            <td>원형 그라데이션 백그라운를 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>repeating-linear-gradient</td>
+                            <td>background-image : repeating-linear-gradient(direction, color1, color2....)</td>
+                            <td>반복 선형 그라데이션 백그라운를 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>repeating-radial-gradient</td>
+                            <td>background-image : repeating-radial-gradient(color1, color2....)</td>
+                            <td>반복 원형 그라데이션 백그라운를 설정합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- .well.clearfix>.block.bac1*4>.gradient${gradient$} -->
+
+                <style>
+                    .block {width: 180px; height: 180px; margin: 50px; font-size: 18px;
+                        line-height: 180px; color: #fff; cursor: pointer; text-align: center;
+                        float: left;}
+                    .block > div {border-radius: 50%;}
+                    .gradient1 {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient2 {background-image: linear-gradient(to left, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient3 {background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient4 {background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);}
+                </style>
+                <h3 class="mt60">linear-gradient : top, left, right, bottom</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient1">gradient1</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient2">gradient2</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient3">gradient3</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient4">gradient4</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient1 {background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);}
+.gradient2 {background-image: linear-gradient(to left, #a18cd1 0%, #fbc2eb 100%);}
+.gradient3 {background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);}
+.gradient4 {background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);}
+</code></pre>
+
+                
+                <style>
+                    .gradient5 {background-image: -webkit-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient6 {background-image: -webkit-linear-gradient(left, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient7 {background-image: -webkit-linear-gradient(right, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient8 {background-image: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : top, left, right, bottom</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient5">gradient5</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient6">gradient6</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient7">gradient7</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient8">gradient8</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient5 {background-image: -webkit-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);}
+.gradient6 {background-image: -webkit-linear-gradient(left, #a18cd1 0%, #fbc2eb 100%);}
+.gradient7 {background-image: -webkit-linear-gradient(right, #a18cd1 0%, #fbc2eb 100%);}
+.gradient8 {background-image: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);}
+</code></pre>
+                
+
+
+                <style>
+                    .gradient9  {background-image: -webkit-linear-gradient(left top, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient10 {background-image: -webkit-linear-gradient(right top, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient11 {background-image: -webkit-linear-gradient(left bottom, #a18cd1 0%, #fbc2eb 100%);}
+                    .gradient12 {background-image: -webkit-linear-gradient(right bottom, #a18cd1 0%, #fbc2eb 100%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : left top, right top, left bottom, right bottom</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient9">gradient9</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient10">gradient10</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient11">gradient11</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient12">gradient12</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient5 {background-image: -webkit-linear-gradient(top, #a18cd1 0%, #fbc2eb 100%);}
+.gradient6 {background-image: -webkit-linear-gradient(left, #a18cd1 0%, #fbc2eb 100%);}
+.gradient7 {background-image: -webkit-linear-gradient(right, #a18cd1 0%, #fbc2eb 100%);}
+.gradient8 {background-image: -webkit-linear-gradient(bottom, #a18cd1 0%, #fbc2eb 100%);}
+</code></pre>
+
+                
+
+                <style>
+                    .gradient13 {background-image: linear-gradient(0deg, #fa709a 0%, #fee140 100%);}
+                    .gradient14 {background-image: linear-gradient(20deg, #fa709a 0%, #fee140 100%);}
+                    .gradient15 {background-image: linear-gradient(40deg, #fa709a 0%, #fee140 100%);}
+                    .gradient16 {background-image: linear-gradient(60deg, #fa709a 0%, #fee140 100%);}
+                    .gradient17 {background-image: linear-gradient(80deg, #fa709a 0%, #fee140 100%);}
+                    .gradient18 {background-image: linear-gradient(100deg, #fa709a 0%, #fee140 100%);}
+                    .gradient19 {background-image: linear-gradient(120deg, #fa709a 0%, #fee140 100%);}
+                    .gradient20 {background-image: linear-gradient(140deg, #fa709a 0%, #fee140 100%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : deg</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient13">gradient13</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient14">gradient14</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient15">gradient15</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient16">gradient16</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient17">gradient17</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient18">gradient18</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient19">gradient19</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient20">gradient20</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient13 {background-image: linear-gradient(0deg, #fa709a 0%, #fee140 100%);}
+.gradient14 {background-image: linear-gradient(20deg, #fa709a 0%, #fee140 100%);}
+.gradient15 {background-image: linear-gradient(40deg, #fa709a 0%, #fee140 100%);}
+.gradient16 {background-image: linear-gradient(60deg, #fa709a 0%, #fee140 100%);}
+.gradient17 {background-image: linear-gradient(80deg, #fa709a 0%, #fee140 100%);}
+.gradient18 {background-image: linear-gradient(100deg, #fa709a 0%, #fee140 100%);}
+.gradient19 {background-image: linear-gradient(120deg, #fa709a 0%, #fee140 100%);}
+.gradient20 {background-image: linear-gradient(140deg, #fa709a 0%, #fee140 100%);}
+</code></pre>
+
+
+                
+                <style>
+                    .gradient21 {background-image: linear-gradient(140deg, #fa709a, #fee140);}
+                    .gradient22 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a);}
+                    .gradient23 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0);}
+                    .gradient24 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff);}
+                    .gradient25 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2);}
+                    .gradient26 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd);}
+                    .gradient27 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc);}
+                    .gradient28 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc, #72afd3);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : color</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient21">gradient21</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient22">gradient22</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient23">gradient23</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient24">gradient24</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient25">gradient25</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient26">gradient26</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient27">gradient27</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient28">gradient28</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient21 {background-image: linear-gradient(140deg, #fa709a, #fee140);}
+.gradient22 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a);}
+.gradient23 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0);}
+.gradient24 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff);}
+.gradient25 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2);}
+.gradient26 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd);}
+.gradient27 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc);}
+.gradient28 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc, #72afd3);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient29 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 20%, #453a94 100%);}
+                    .gradient30 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 30%, #453a94 100%);}
+                    .gradient31 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 40%, #453a94 100%);}
+                    .gradient32 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 50%, #453a94 100%);}
+                    .gradient33 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 60%, #453a94 100%);}
+                    .gradient34 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 70%, #453a94 100%);}
+                    .gradient35 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 80%, #453a94 100%);}
+                    .gradient36 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 90%, #453a94 100%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : color position</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient29">gradient29</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient30">gradient30</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient31">gradient31</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient32">gradient32</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient33">gradient33</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient34">gradient34</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient35">gradient35</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient36">gradient36</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient29 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 20%, #453a94 100%);}
+.gradient30 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 30%, #453a94 100%);}
+.gradient31 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 40%, #453a94 100%);}
+.gradient32 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 50%, #453a94 100%);}
+.gradient33 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 60%, #453a94 100%);}
+.gradient34 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 70%, #453a94 100%);}
+.gradient35 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 80%, #453a94 100%);}
+.gradient36 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 90%, #453a94 100%);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient37 {background-image: linear-gradient(45deg, #7cb342 50%, #558b2f 50%);}
+                    .gradient38 {background-image: linear-gradient(90deg, #7cb342 50%, #558b2f 50%);}
+                    .gradient39 {background-image: linear-gradient(120deg, #7cb342 50%, #558b2f 50%);}
+                    .gradient40 {background-image: linear-gradient(160deg, #7cb342 50%, #558b2f 50%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : color position 2</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient37">gradient37</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient38">gradient38</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient39">gradient39</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient40">gradient40</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient37 {background-image: linear-gradient(45deg, #7cb342 50%, #558b2f 50%);}
+.gradient38 {background-image: linear-gradient(90deg, #7cb342 50%, #558b2f 50%);}
+.gradient39 {background-image: linear-gradient(120deg, #7cb342 50%, #558b2f 50%);}
+.gradient40 {background-image: linear-gradient(160deg, #7cb342 50%, #558b2f 50%);}
+</code></pre>
+
+                <style>
+                    .gradient41 {background-image: linear-gradient(90deg, #4db6ac 50%, #009688 50%);}
+                    .gradient42 {background-image: linear-gradient(90deg, #4db6ac 33.3333%, #009688 33.3333% 66.6666%, #00897b 66.6666%);}
+                    .gradient43 {background-image: linear-gradient(90deg, #4db6ac 25%, #009688 25% 50%, #00897b 50% 75%, #00695c 75%);}
+                    .gradient44 {background-image: linear-gradient(90deg, #4db6ac 20%, #009688 20% 40%, #00897b 40% 60%, #00695c 60% 80%, #004d40 80%);}
+                </style>
+                <br>
+                <h3 class="mt60">linear-gradient : color position 3</h3>
+                <div class="well clearfix">
+                    <div class="block bac1">
+                        <div class="gradient41">gradient41</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient42">gradient42</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient43">gradient43</div>
+                    </div>
+                    <div class="block bac1">
+                        <div class="gradient44">gradient44</div>
+                    </div>
+                </div>
+<pre><code class="language-css line-numbers">.gradient41 {background-image: linear-gradient(90deg, #4db6ac 50%, #009688 50%);}
+.gradient42 {background-image: linear-gradient(90deg, #4db6ac 33.3333%, #009688 33.3333% 66.6666%, #00897b 66.6666%);}
+.gradient43 {background-image: linear-gradient(90deg, #4db6ac 25%, #009688 25% 50%, #00897b 50% 75%, #00695c 75%);}
+.gradient44 {background-image: linear-gradient(90deg, #4db6ac 20%, #009688 20% 40%, #00897b 40% 60%, #00695c 60% 80%, #004d40 80%);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient45 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient46 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient47 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient48 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient49 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient50 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient51 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                    .gradient52 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+                </style>
+                    <br>
+                    <h3 class="mt60">linear-gradient : fixed</h3>
+                    <div class="well clearfix">
+                        <div class="block bac1">
+                            <div class="gradient45">gradient45</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient46">gradient46</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient47">gradient47</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient48">gradient48</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient49">gradient49</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient50">gradient50</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient51">gradient51</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient52">gradient52</div>
+                        </div>
+                    </div>
+                
+<pre><code class="language-css line-numbers">.gradient45 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient46 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient47 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient48 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient49 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient50 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient51 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+.gradient52 {background: linear-gradient(-20deg, #b721ff, #21d4fd) fixed;}
+</code></pre>
+
+
+                <style>
+                    .gradient60 {background-image: radial-gradient(#ff80ab 0%, #ff4081 20%, #f50057 100%);}
+                    .gradient61 {background-image: radial-gradient(#ff80ab 0%, #ff4081 30%, #f50057 100%);}
+                    .gradient62 {background-image: radial-gradient(#ff80ab 0%, #ff4081 40%, #f50057 100%);}
+                    .gradient63 {background-image: radial-gradient(#ff80ab 0%, #ff4081 50%, #f50057 100%);}
+                    .gradient64 {background-image: radial-gradient(#ff80ab 0%, #ff4081 60%, #f50057 100%);}
+                    .gradient65 {background-image: radial-gradient(#ff80ab 0%, #ff4081 70%, #f50057 100%);}
+                    .gradient66 {background-image: radial-gradient(#ff80ab 0%, #ff4081 80%, #f50057 100%);}
+                    .gradient67 {background-image: radial-gradient(#ff80ab 0%, #ff4081 90%, #f50057 100%);}
+                </style>
+                    <br>
+                    <h3 class="mt60">radial-gradient : position</h3>
+                    <div class="well clearfix">
+                        <div class="block bac1">
+                            <div class="gradient60">gradient60</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient61">gradient61</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient62">gradient62</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient63">gradient63</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient64">gradient64</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient65">gradient65</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient66">gradient66</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient67">gradient67</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient60 {background-image: radial-gradient(#ff80ab 0%, #ff4081 20%, #f50057 100%);}
+.gradient61 {background-image: radial-gradient(#ff80ab 0%, #ff4081 30%, #f50057 100%);}
+.gradient62 {background-image: radial-gradient(#ff80ab 0%, #ff4081 40%, #f50057 100%);}
+.gradient63 {background-image: radial-gradient(#ff80ab 0%, #ff4081 50%, #f50057 100%);}
+.gradient64 {background-image: radial-gradient(#ff80ab 0%, #ff4081 60%, #f50057 100%);}
+.gradient65 {background-image: radial-gradient(#ff80ab 0%, #ff4081 70%, #f50057 100%);}
+.gradient66 {background-image: radial-gradient(#ff80ab 0%, #ff4081 80%, #f50057 100%);}
+.gradient67 {background-image: radial-gradient(#ff80ab 0%, #ff4081 90%, #f50057 100%);}
+</code></pre>
+
+
+                <style>
+                    .gradient68 {background-image: radial-gradient(#b2ebf2, #80deea);}
+                    .gradient69 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1);}
+                    .gradient70 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da);}
+                    .gradient71 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4);}
+                    .gradient72 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1);}
+                    .gradient73 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7);}
+                    .gradient74 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7, #00838f);}
+                    .gradient75 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7, #00838f, #006064);}
+                </style>
+                    <br>
+                    <h3 class="mt60">radial-gradient : Color add</h3>
+                    <div class="well clearfix">
+                        <div class="block bac1">
+                            <div class="gradient68">gradient68</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient69">gradient69</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient70">gradient70</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient71">gradient71</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient72">gradient72</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient73">gradient73</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient74">gradient74</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient75">gradient75</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient68 {background-image: radial-gradient(#b2ebf2, #80deea);}
+.gradient69 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1);}
+.gradient70 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da);}
+.gradient71 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4);}
+.gradient72 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1);}
+.gradient73 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7);}
+.gradient74 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7, #00838f);}
+.gradient75 {background-image: radial-gradient(#b2ebf2, #80deea, #4dd0e1, #26c6da, #00bcd4, #00acc1, #0097a7, #00838f, #006064);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient76 {background-image: radial-gradient(#c0ca33 50%, #9e9d24 50%);}
+                    .gradient77 {background-image: radial-gradient(#c0ca33 33.3333%, #9e9d24 33.3333% 66.6666%, #827717 66.6666%);}
+                    .gradient78 {background-image: radial-gradient(#c0ca33 25%, #9e9d24 25% 50%, #827717 50% 75%, #388e3c 75%);}
+                    .gradient79 {background-image: radial-gradient(#c0ca33 20%, #9e9d24 20% 40%, #827717 40% 60%, #388e3c 60% 80%, #2e7d32 80%);}
+                </style>
+                    <br>
+                    <h3 class="mt60">radial-gradient : position</h3>
+                    <div class="well clearfix">
+                        <div class="block bac1">
+                            <div class="gradient76">gradient76</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient77">gradient77</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient78">gradient78</div>
+                        </div>
+                        <div class="block bac1">
+                            <div class="gradient79">gradient79</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient76 {background-image: radial-gradient(#c0ca33 50%, #9e9d24 50%);}
+.gradient77 {background-image: radial-gradient(#c0ca33 33.3333%, #9e9d24 33.3333% 66.6666%, #827717 66.6666%);}
+.gradient78 {background-image: radial-gradient(#c0ca33 25%, #9e9d24 25% 50%, #827717 50% 75%, #388e3c 75%);}
+.gradient79 {background-image: radial-gradient(#c0ca33 20%, #9e9d24 20% 40%, #827717 40% 60%, #388e3c 60% 80%, #2e7d32 80%);}
+</code></pre>
+
+
+                <style>
+                    .bac3 > div {border-radius: 3px;}
+                    .gradient80 {background-image: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient81 {background-image: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient82 {background-image: radial-gradient(ellipse farthest-corner at right top, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient83 {background-image: radial-gradient(ellipse farthest-corner at bottom left, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient84 {background-image: radial-gradient(ellipse farthest-corner at bottom center, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient85 {background-image: radial-gradient(ellipse farthest-corner at bottom right, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient86 {background-image: radial-gradient(ellipse farthest-corner at left center, #f8bfa4 0%, #f33b4e 100%);}
+                    .gradient87 {background-image: radial-gradient(ellipse farthest-corner at right center, #f8bfa4 0%, #f33b4e 100%);}
+                </style>
+                    <br>
+                    <h3 class="mt60">radial-gradient : position</h3>
+                    <div class="well clearfix">
+                        <div class="block bac3">
+                            <div class="gradient80">gradient80</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient81">gradient81</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient82">gradient82</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient83">gradient83</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient84">gradient84</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient85">gradient85</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient86">gradient86</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient87">gradient87</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient80 {background-image: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient81 {background-image: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient82 {background-image: radial-gradient(ellipse farthest-corner at right top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient83 {background-image: radial-gradient(ellipse farthest-corner at bottom left, #f8bfa4 0%, #f33b4e 100%);}
+.gradient84 {background-image: radial-gradient(ellipse farthest-corner at bottom center, #f8bfa4 0%, #f33b4e 100%);}
+.gradient85 {background-image: radial-gradient(ellipse farthest-corner at bottom right, #f8bfa4 0%, #f33b4e 100%);}
+.gradient86 {background-image: radial-gradient(ellipse farthest-corner at left center, #f8bfa4 0%, #f33b4e 100%);}
+.gradient87 {background-image: radial-gradient(ellipse farthest-corner at right center, #f8bfa4 0%, #f33b4e 100%);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient88 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient89 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient90 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient91 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient92 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient93 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient94 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                    .gradient95 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+                </style>
+                    <br>
+                    <h3 class="mt60">radial-gradient : fixed</h3>
+                    <div class="well clearfix">
+                            <div class="block bac3">
+                            <div class="gradient88">gradient88</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient89">gradient89</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient90">gradient90</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient91">gradient91</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient92">gradient92</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient93">gradient93</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient94">gradient94</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient95">gradient95</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient88 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient89 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient90 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient91 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient92 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient93 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient94 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+.gradient95 {background: radial-gradient(#e14fad 0%, #f9d423 100%) fixed;}
+</code></pre>
+
+
+
+                <style>
+                    .gradient100 {background: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    .gradient101 {background: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    .gradient102 {background: repeating-linear-gradient(45deg, transparent 15px, transparent 25px,  #33691e 10px, #33691e 45px);}
+                    .gradient103 {background: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+                </style>
+                    <br>
+                    <h3 class="mt60">repeating-linear-gradient</h3>
+                    <div class="well clearfix">
+                        <div class="block bac3">
+                            <div class="gradient100">gradient100</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient101">gradient101</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient102">gradient102</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient103">gradient103</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient100 {background: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient101 {background: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient102 {background: repeating-linear-gradient(45deg, transparent 15px, transparent 25px,  #33691e 10px, #33691e 45px);}
+.gradient103 {background: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient104 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+                    .gradient105 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+                    .gradient106 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+                    .gradient107 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}
+                </style>
+                    <br>
+                    <h3 class="mt60">repeating-linear-gradient</h3>
+                    <div class="well clearfix">
+                        <div class="block bac3">
+                            <div class="gradient104">gradient104</div>
+                        </div>
+                        <div class="block bac3">
+                                <div class="gradient105">gradient105</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient106">gradient106</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient107">gradient107</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient104 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+.gradient105 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+.gradient106 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+.gradient107 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}  
+</code></pre>
+
+
+
+                <style>
+                    .gradient108 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+                    .gradient109 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+                    .gradient110 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+                    .gradient111 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+                </style>
+                    <br>
+                    <h3 class="mt60">repeating-radial-gradient</h3>
+                    <div class="well clearfix">
+                        <div class="block bac3">
+                            <div class="gradient108">gradient108</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient109">gradient109</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient110">gradient110</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient111">gradient11</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient108 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+.gradient109 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+.gradient110 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+.gradient111 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+</code></pre>
+
+
+
+                <style>
+                    .gradient112 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+                    .gradient113 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+                    .gradient114 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+                    .gradient115 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+                </style>
+                    <br>
+                    <h3 class="mt60">repeating-radial-gradient</h3>
+                    <div class="well clearfix">
+                        <div class="block bac3">
+                            <div class="gradient112">gradient112</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient113">gradient113</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient114">gradient114</div>
+                        </div>
+                        <div class="block bac3">
+                            <div class="gradient115">gradient15</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.gradient112 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+.gradient113 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+.gradient114 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+.gradient115 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+</code></pre>
+
+
+
+                <br>
+                <h2>Sample</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="Gbvwbg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Repeating-linear-gradient Background">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/Gbvwbg/">
+                    Repeating-linear-gradient Background</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <br>
+                <h2>Sample</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="MMvZEX" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Background">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/MMvZEX/">
+                    Background</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <br>
+                <h2>Sample</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="agyPjg" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="background">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/agyPjg/">
+                    background</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <br>
+                <h2>마우스 움직임에 따라 변하는 백그라운드</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="mZMveM" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="background Effect">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/mZMveM/">
+                    background Effect</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <br>
+                <h2>3초에 한번씩 바뀌는 백그라운드 컬러</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="RzZvyQ" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RzZvyQ">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/RzZvyQ/">
+                    RzZvyQ</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                  
+                <br>
+                <h2>랜덤으로 변하는 그라디언트 백그라운드 컬러</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="gNGZdM" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Random Gradient Background">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/gNGZdM/">
+                    Random Gradient Background</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                <br>
+                <h2>랜덤으로 변하는 백그라운드 이미지</h2>
+                <p class="codepen" data-height="500" data-theme-id="37234" data-default-tab="result" data-user="veritedy" data-slug-hash="bPoOPo" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Random Image Background">
+                    <span>See the Pen <a href="https://codepen.io/veritedy/pen/bPoOPo/">
+                    Random Image Background</a> by veritedy (<a href="https://codepen.io/veritedy">@veritedy</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+            </div>
+			<!--//span12-->
+		</div>
+		<!--//row-fluid-->
+	</div>  
+	<!-- //contents -->
+    
+    <!-- //footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h5>Webstoryboy</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- //footer -->
+
+	<!-- script -->
+	<script src="../assets/js/jquery-1.9.1.min.js"></script> 
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script>
+</body>
+</html>
