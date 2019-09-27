@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>논리 연산자</title>
+	<script>
+		var a = 10;
+		var b = 20;
+
+		document.write( false || false); 	//false
+		document.write("<br>");
+		document.write( false || true);     //true
+		document.write("<br>");
+		document.write( true || true);      //true
+		document.write("<br>");
+
+		document.write( false && false);	//false
+		document.write("<br>");
+		document.write( false && true);		//false
+		document.write("<br>");
+		document.write( true && true);		//true
+		document.write("<br>");
+
+		document.write( !true );					//false
+		document.write("<br>");
+		document.write( !false );					//ture
+		document.write("<br>");
+
+		document.write( a > b && a < b);  			//false;
+		document.write("<br>");
+		document.write( a > b && a < b && a >= b);  //false;
+		document.write("<br>");
+		document.write( a > 200 || 50 < b);  		//false;
+		document.write("<br>");
+		document.write( !(a > 200));  				//true;
+		document.write("<br>");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

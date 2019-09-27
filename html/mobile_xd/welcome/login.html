@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title>Welcome</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            height: 100vh; 
+            background: url(img/welcome_bg.jpg) no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+            only screen and (min-device-pixel-ratio: 1.5),
+            only screen and (min-resolution: 1.5dppx){
+                body {background: url(img/welcome_bg@2x.jpg) no-repeat center center; background-size: cover;}
+        }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2.5),
+            only screen and (min-device-pixel-ratio: 2.5),
+            only screen and (min-resolution: 2.5dppx){
+                body {background: url(img/welcome_bg@3x.jpg) no-repeat center center; background-size: cover;}
+        }
+
+
+        body::after {
+            content: '';
+            position: absolute; left: 0; top: 0;
+            width: 100vw; height: 100vh;
+            opacity: 0.62;
+            background-color: #3d3e53;
+            z-index: -1;
+        }
+        header {
+            height: 85vh;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            flex-flow : column nowrap;
+        }
+        header h1 {
+            font-weight: normal;
+            text-align: center;
+            font-size: 47px; line-height: 1.19; color: #fff; font-family: 'netmarble', cursive;}
+        header p {
+            color: #f2f2f2; padding-top: 34px; text-align: center;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 300;
+        }
+        .btn_wrap {
+            position: absolute; bottom: 20px; left: 0;
+            width: 100%;
+        }
+        .btn_wrap a {
+            display: block;
+            width: 92%; margin: 1.5vh 4%;
+            height: 56px; line-height: 56px;
+            border-radius: 44px;
+            background-color: #8a56ac;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        .btn_wrap a.email {background-color: #8a56ac;}
+        .btn_wrap a.facebook {background-color: #d47fa6;}
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome<br>To My Site</h1>
+        <p>The best way to meet people and<br>Try new activities</p>
+    </header>
+    <div class="btn_wrap">
+        <a href="#" class="email">Email</a>
+        <a href="#" class="facebook">Facebook</a>
+    </div>
+</body>
+</html>
