@@ -8,3 +8,9 @@
 
 <h3>반응형 사이트</h3>
 <a href="https://veritedy.github.io/dy/html/responsive/index.html">view</a>
+
+<h3>달달해 Mobile</h3>
+<a href="https://veritedy.github.io/dy/html/responsive/index.html">view</a>
+
+<h3>달달해 PC</h3>
+<a href="https://veritedy.github.io/dy/html/responsive/index.html">view</a>
