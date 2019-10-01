@@ -14,6 +14,7 @@ $(document).ready(function (){
 
         var imgPos = $('#content2 .images').offset().top - 400;
         if (scrollT > imgPos) $('#content2 .images').addClass('on');
+        else $('#content2 .images').removeClass('on');
 
         var scrollT = $(this).scrollTop();
         var move2 = (100/$(window).height())*scrollT
