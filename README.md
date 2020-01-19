@@ -14,3 +14,6 @@ doyea's portpolio
 
 <h3>달달해 PC</h3>
 <a href="https://veritedy.github.io/doyea/DALDALHAE_PC/pc_index.html">view</a>
+
+<h3>메가박스</h3>
+<a href="https://veritedy.github.io/doyea/html/megabox/mega/index.html">view</a>
