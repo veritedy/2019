@@ -10,5 +10,7 @@ doyea's portpolio
 <a href="https://veritedy.github.io/doyea/html/responsive/index.html">view</a>
 
 <h3>달달해 Mobile</h3>
+<a href="https://veritedy.github.io/doyea/html/mobile/index.html">view</a>
 
 <h3>달달해 PC</h3>
+<a href="https://veritedy.github.io/doyea/html/pc/index.html">view</a>
